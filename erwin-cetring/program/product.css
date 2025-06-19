@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ECE8E3;
+}
+
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    background-color: #f8f3ee;
+}
+
+.header a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #5a3e2b;
+    font-weight: bold;
+}
+
+/* Highlight section styling */
+.highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url(/head-produk.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+/* Info sections styling */
+.inpo {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #fff;
+}
+
+.inpo h1 {
+    width: 100%;
+    height: 3vh;
+    color: #7F2B1C;
+}
+
+.inpo-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+
+.inpo-block img {
+    width: 100%;
+    height: 60%;
+}
+
+.inpo-2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10vw;
+    background-color: #ECE8E3;
+}
+
+.inpo-2 h1 {
+    width: 100%;
+    height: 3vh;
+    color: #7F2B1C;
+    text-align: center;
+}
+
+.class {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 90vh;
+}
+
+.box-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.box-txt h1 {
+    font-size: 4vw;
+    color: #7F2B1C;
+}
+
+.box-txt p {
+    margin-top: 4vh;
+    font-size: 1.4vw;
+}
+
+.lower-box {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lower-box img {
+    width: 50%;
+    height: 100%;
+}
+
+.box-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.colom-box {
+    width: 50%;
+    height: 5vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8b0000;
+    color: #fff;
+    border-radius: 1vw;
+}
+
+
+.footer {
+    background-color: #8b0000;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .contact-info {
+    margin: 10px 0;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+}
+
+
+
+/* Responsive Design: Media Queries */
+@media screen and (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .highlight {
+        height: 40vh;
+        background-size: cover;
+    }
+    
+    .highlight-txt h1 {
+        font-size: 10vw;
+        text-shadow: 1vw 1vw 1vw #ffffff;
+    }
+    
+    .highlight-txt p {
+        font-size: 3vw;
+    }
+    
+    .inpo, .inpo-2 {
+        height: 150vh;
+        padding: 20px 0;
+    }
+    
+    .inpo-block {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .class {
+        flex-direction: column;
+    }
+    
+    .lower {
+        height: auto;
+    }
+    
+    .box-txt h1 {
+        font-size: 8vw;
+    }
+    
+    .box-txt p {
+        font-size: 3vw;
+    }
+    
+    .lower-box {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .lower-box img {
+        width: 80%;
+        height: auto;
+    }
+    
+    .colom-box {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}

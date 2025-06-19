@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ECE8E3;
+}
+
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    background-color: #f8f3ee;
+}
+
+.header a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #5a3e2b;
+    font-weight: bold;
+}
+
+/* Highlight section styling */
+.highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url(/image\ 8.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+
+.story {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.txt-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+
+.story img {
+    width: 40%;
+    height: 40vh;
+}
+
+.txt-box h1 {
+    font-size: 2vw;
+    color: #8b0000;
+}
+
+.txt-box p {
+    font-size: 1.3vw;
+}
+
+
+.footer {
+    background-color: #8b0000;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .contact-info {
+    margin: 10px 0;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+}
+
+
+
+/* Responsive Design: Media Queries */
+@media screen and (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .highlight {
+        height: 40vh;
+        background-size: cover;
+    }
+    
+    .highlight-txt h1 {
+        font-size: 10vw;
+        text-shadow: 1vw 1vw 1vw #ffffff;
+    }
+    
+    .highlight-txt p {
+        font-size: 3vw;
+    }
+    
+    .story {
+        flex-direction: row;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .txt-box {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .txt-box h1 {
+        font-size: 4vw;
+    }
+    
+    .txt-box p {
+        font-size: 2vw;
+    }
+    
+    .story img {
+        width: 30%;
+        height: auto;
+    }
+}

@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ECE8E3;
+}
+
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    background-color: #f8f3ee;
+}
+
+.header a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #5a3e2b;
+    font-weight: bold;
+}
+
+.highlight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.highlight video {
+    width: 40%;
+    height: 70%;
+}
+
+.highlight-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+}
+
+.highlight-txt p {
+    margin-top: 2vh;
+}
+
+.highlight-txt h1 {
+    color: #8b0000;
+}
+
+
+.testi {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.testi-container {
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #7f2b1c93;
+    align-items: center;
+    color: #fff;
+    border-radius: 3vw;
+}
+
+.testi-container img{
+    width: 60%;
+    height: 50%;
+    border-radius: 50%;
+    margin-top: -15vh;
+}
+
+.testi-container p {
+    text-align: center;
+    font-size: 1vw;
+    width: 70%;
+}
+
+.footer {
+    background-color: #8b0000;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: 30vh;
+}
+
+.footer .contact-info {
+    margin: 10px 0;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .highlight {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .highlight video {
+        width: 80%;
+        height: auto;
+    }
+    
+    .highlight-txt {
+        width: 80%;
+    }
+    
+    .highlight-txt h1 {
+        font-size: 6vw;
+    }
+    
+    .highlight-txt p {
+        font-size: 4vw;
+    }
+    
+    .testi {
+        flex-direction: column;
+        height: 160vh;
+
+    }
+    
+    .testi-container {
+        width: 80%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testi-container img{
+        width: 60%;
+        height: 70%;
+        margin-top: 0;
+    }
+    
+    .testi-container p {
+        font-size: 4vw;
+    }
+    
+    .footer {
+        padding: 10px;
+    }
+    
+
+}

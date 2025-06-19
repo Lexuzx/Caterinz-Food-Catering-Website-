@@ -1,0 +1,279 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ECE8E3;
+}
+
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.header {
+    background-color: #f8f3ee;
+}
+
+.header a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #5a3e2b;
+    font-weight: bold;
+}
+
+
+.highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url(/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.highlight-txt {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.highlight-txt h1 {
+    font-size: 9vw;
+    color: #ffffff;
+    text-shadow: 2vw 2vw 2vw #ffffff;
+}
+
+.highlight-txt p {
+    font-size: 1vw;
+    color: #fff;
+}
+
+
+.infomation {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box-conten {
+    height: 50%;
+    width: 26vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 3vw;
+}
+
+.box-conten img {
+    width: 20vw;
+    height: 30vh;
+    margin-top: -20vh;
+}
+
+.box-conten h2 {
+    color: #000;
+    border-bottom: 4vw #000;
+}
+
+.box-conten p {
+    color: #000;
+    text-align: center;
+    width: 80%;
+}
+
+.mid-info {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.upper-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20%;
+}
+
+.upper-txt {
+    width: 78%;
+}
+
+.info-txt {
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4vh;
+    align-items: center;
+}
+
+.inner-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 40%;
+    height: 10vh;
+}
+
+.inner-txt p {
+    width: 90%;
+}
+
+
+.lower-info {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.lower-info h1 {
+    font-size: 5vw;
+}
+
+.img-lower {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-lower img {
+    height: 30vh;
+}
+
+
+.footer {
+    background-color: #8b0000;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: 30vh;
+}
+
+.footer .contact-info {
+    margin: 10px 0;
+}
+
+.footer .social-icons a {
+    margin: 0 10px;
+    color: white;
+}
+
+
+
+/* Responsive Design: Media Queries */
+@media screen and (max-width: 768px) {
+    .header, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header a{
+        text-align: right;
+    }
+
+    .highlight-txt h1 {
+        font-size: 15vw;
+        text-shadow: 1vw 1vw 1vw #ffffff;
+    }
+    
+    .highlight-txt p {
+        font-size: 2vw;
+    }
+    
+    .infomation {
+        flex-direction: row;
+        height: auto;
+    }
+    
+    .box {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .box-conten {
+        width: 80%;
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+    
+    .box-conten img {
+        width: 70%;
+        height: 40%;
+        margin-top: -10vh;
+    }
+    
+    .mid-info, .lower-info {
+        height: auto;
+        padding: 20px 0;
+    }
+    
+    .info-txt {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+    }
+    
+    .inner-txt {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .lower-info h1 {
+        font-size: 4vw;
+    }
+    
+    .img-lower {
+        flex-direction: column;
+    }
+    
+    .img-lower img {
+        width: 80%;
+        height: auto;
+    }
+}
